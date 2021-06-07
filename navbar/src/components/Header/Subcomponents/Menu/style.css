@@ -1,48 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: 0;
-    box-sizing: border-box;
-}
 
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 10vh;
-    background-color: #017f59;
-    color: #fff;
-    padding: 4px 10vw;
-    
-}
-    .nav .nav__logo{
-        fill: #fff;
-        height: 6vh;
-        width: auto;
-    }
-    
-    .nav .nav__icon{
-        height:5vh ;
-        width: auto;
-    }
-    .nav .nav__bars{
-        display: block;
-    }
-    .nav.active .nav__bars{
-        display: none;
-    }
-    .nav.active .nav__close{
-        display: block;
-    }
-    .nav .nav__close{
-        display: none;
-    }
-    .nav.active .nav__menu{
-        display: flex;
-        transform: translateX(0vw);
-        z-index: 0;
-    }
     .nav .nav__menu{
         display: flex;
         justify-content: center;
@@ -61,14 +17,21 @@
         border-top: 1px solid #fff;
         
     }
+    .nav .nav__menu li .nav__menu__item{
+        display: flex;
+        color: #fff;
+        margin-right: 16px;
+        font-family: sans-serif;
+        font-weight: 700;
+    }
+    .nav.active .nav__menu{
+        display: flex;
+        transform: translateX(0vw);
+        z-index: 0;
+    }
     
-        .nav .nav__menu li .nav__menu__item{
-            display: flex;
-            color: #fff;
-            margin-right: 16px;
-            font-family: sans-serif;
-            font-weight: 700;
-        }
+    
+        
 @media screen and (min-width: 465px) {
     
 }
@@ -92,9 +55,6 @@
         margin-right: 16px;
         font-family: sans-serif;
         font-weight: 600;
-    }
-    .nav .nav__icon, .nav.active .nav__icon{
-        display: none ;
     }
     
 

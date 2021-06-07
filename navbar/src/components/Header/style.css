@@ -1,0 +1,51 @@
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: #017f59;
+    color: #fff;
+    padding: 4px 10vw;
+    
+}
+    
+    .nav .nav__icon{
+        height:5vh ;
+        width: auto;
+    }
+    .nav .nav__icon:hover{
+        cursor: pointer;
+    }
+    .nav .nav__bars{
+        display: block;
+    }
+    .nav .nav__close{
+        display: none;
+    }
+    .nav.active .nav__bars{
+        display: none;
+    }
+    .nav.active .nav__close{
+        display: block;
+    }
+    
+    
+    
+@media screen and (min-width: 465px) {
+    
+}
+@media screen and (min-width: 610px) {
+    
+}
+@media screen and (min-width: 755px) {
+    
+    .nav .nav__icon, .nav.active .nav__icon{
+        display: none ;
+    }
+    
+
+}
+@media screen and (min-width: 900px) {
+    
+}
